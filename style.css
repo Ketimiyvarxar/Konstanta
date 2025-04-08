@@ -1,0 +1,187 @@
+body {
+    background-color: black; 
+}
+
+
+/* formatting links*/
+
+a:link {
+    color: #483D8B;
+  }
+  
+
+  a:visited {
+    color: gray;
+  }
+  
+  
+  a:hover {
+    color: skyblue;
+  }
+  
+
+  a:active {
+    color: blue;
+  }
+/*
+  .topleft {
+    position: absolute;
+    top: 8px;
+    left: 16px;
+    font-size: 18px;
+    
+  }
+*/
+
+/*icons for account and darkmode */
+  .icon {
+    width: 48px;               
+    height: 48px;
+    object-fit: contain;       /*proportions */
+    cursor: pointer;           
+    display: inline-block;
+    transition: transform 0.2s ease;
+  }
+
+  .icon:hover {
+    transform: scale(1.2);     /* zoom on hover */
+  }
+
+  .icon:active {
+    transform: scale(0.8);    /*shrink on click */
+
+  }
+
+  .menu-button {
+    background: none;
+    border: none;
+    padding: 0;
+    margin: 0;
+    cursor: pointer;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+  }
+  .menu-button .icon {
+    width: 48px;   
+    height:48px;
+  }
+  .menue-button:hover{
+    transform: scale(1.2); 
+  }
+  .menue-button:hover {
+    transform: scale(0.8);    
+
+  }
+
+  
+/* dropdown for Menue*/
+  .dropdown{
+      position: relative;
+      display: inline-block;
+      cursor: pointer;     
+      
+  }
+
+  .content{
+      display:none;
+      position: absolute;
+      background: #483D8B;
+      width: 100vw;
+      box-shadow: 0px 8px 16px rgba(0,0,0,0.2);
+      overflow-y: auto;
+      cursor: pointer;     
+      
+      
+  }
+
+  .dropdown:hover .content
+  {display: block;
+  }
+
+  .content a{
+      color: black;
+      display: block;
+      padding: 12px 16px;
+  }
+
+
+  .content a:hover
+  {
+      background: #bbb;
+  }
+/*table for menue*/
+  table {
+  width: 100%;
+  border-collapse: collapse;
+  table-layout: fixed;  
+  }
+
+  td {
+  border: none;  
+  padding: 10px;
+  }
+
+  .left {
+  text-align: left;
+  }
+
+  .right {
+  text-align: right;
+  }
+
+  .header-bar {
+      display: flex;
+      align-items: center;
+      justify-content: space-between; /* instead of left and right stuff*/
+      background: #483D8B;
+      /*box-shadow: 0 0 0 4px hsl(248, 37%, 48%);*/
+      width:100%;
+      padding: 20px;
+      box-sizing: border-box; 
+     
+}
+/*quiz btn*/ 
+.my_btn{
+    background-color: #483D8B;
+    color: white;
+    border: none;
+    outline-style: deep rgba(96, 47, 202, 0.974) ;
+    border-radius: 20px;
+    box-shadow: 3px 3px  deep rgba(96, 47, 202, 0.974) ;;
+    transition: 0.8s;
+    padding: 10px 25px;
+    min-height:30px;
+    min-width:120px;
+}
+.my_btn:focus {
+    background-color: #0000CD;
+    outline-style:solid;
+    box-shadow: 0 0 0 4px hsl(248, 37%, 48%);
+    transition: 0.8s;
+}
+.my_btn:hover {
+    background-color: #191970;
+    transition: 0.8s;
+    transform: rotateX(38deg) translateY(7px);
+
+}
+
+.my_btn:active{
+    background-color: #0000FF;
+}
+
+
+.pic_text {
+    display: flex;
+    align-items: center;
+    justify-content:center ; /* instead of left and right stuff*/
+    background: none;
+    /*box-shadow: 0 0 0 4px hsl(248, 37%, 48%);*/
+    width: 100%;
+    padding: 50px;
+}
+
+.logo {
+    margin-right: 15px; 
+}

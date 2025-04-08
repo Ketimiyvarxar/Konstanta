@@ -1,39 +1,81 @@
 <!DOCTYPE html>
+<html lang="en">
 <head>
-    <title>Authentication</title>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <title>Create Account</title>
+  <link rel="stylesheet" href="style.css" />
+  <link rel="stylesheet" href="make_acc.css" />
 </head>
-
 <body>
-    <header>
-        <table width="100%">
+
+
+  <header>
+ 
+    <div class="header-bar">
+      
+    
+      <div class="dropdown">
+        <button class="menu-button">
+          <img src="knino.png" alt="Menu" class="icon" />
+        </button>
+        <div class="content">
+          <table>
             <tr>
-                <td align="left">
-                    <a href="about.html"><button type="button">About</button></a>
-                    <a href="guide.html"><button type="button">Guide</button></a>
-                    <a href="section_list.html"><button type="button">Sections</button></a>
-                    <a href="index.html"><button type="button">Main</button></a>
-                </td>
-                <td align="right">
-                    <button type="button">Search</button>
-                    <button type="button">Dark Theme</button>
-                    <a href="sign_in_main.html"><button type="button">Sign in</button></a>
-                    <a href="section_list.html"><button type="button">quizes</button></a>
-                </td>
+              <td class="left">
+                <a href="about.html">About</a>
+                <a href="guide.html">Guide</a>
+                <a href="quiz.html">Quiz</a>
+                <a href="selection_main.html">chapters</a>
+              </td>
+              <td class="right">
+                <a href="about.html">About</a>
+                <a href="guide.html">Guide</a>
+                <a href="quiz.html">Quiz</a>
+                <a href="selection_main.html">chapters</a>
+              </td>
             </tr>
-        </table>
-        <img src="konstanta.png">
-        <Span>
-            <h1><b>Konstanta</b></h1>
-            <h2>One Space for All SAT Math points</h2>
-        </Span>
-    </header>
-    <main>
-        <img src="jirr.jpeg">
-        <h1>Start your college journey here</h1>
-        <a href="sign_up.html"> <button type="button>">Sign up</button></a>
-        <a href="sign_in.html"> <button type="button>">Sign In</button></a>
-    </main>
+          </table>
+        </div>
+      </div>
+  
+    
+      <div class="icon-bar">
+        <a href="index.html"><img src="ksaxli.png" alt="Home" class="icon" /></a>
+        <a href="index.html"><img src="darkmode.png" alt="Dark Mode" class="icon" /></a>
+        <a href="sign_in_main.html"><img src="kaci.png" alt="Account" class="icon" /></a>
+      </div>
+      
+    </div>
+  </header>
+      
+  <div class="form-container">
+    <h1>Create Account</h1>
+    <form>
+      <div class="input-group">
+        <input type="text" id="firstName" name="firstName"  required />
+        <label for="firstName">First Name</label>
+      </div>
+
+      <div class="input-group">
+        <input type="text" id="lastName"  required />
+        <label for="lastName">Last Name</label>
+      </div>
+
+      <div class="input-group">
+        <input type="email" id="email" name="email"  required />
+        <label for="email">Email</label>
+      </div>
+
+      <div class="input-group">
+        <input type="date" id="dob" name="dob" required />
+      </div>
+
+      <div style="margin: 0 auto; width: 200px;">
+        <a href="sign_in_main.html"> <button type="button" class="my_btn"><centre>Create An account</centre></button> </a>
+      </div>
+
+    </form>
+  </div>
 </body>
+</html>

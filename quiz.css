@@ -1,0 +1,38 @@
+.quiz-container {
+    max-width: 600px;
+    margin: auto;
+    background:#483D8B;
+    padding: 20px;
+    border-radius: 10px;
+    box-shadow: deep rgba(96, 47, 202, 0.974);
+  }
+  
+  .question {
+    margin-bottom: 30px;
+  }
+  
+  .question img {
+    width: 100%;
+    height: auto;
+    border-radius: 8px;
+    margin-bottom: 10px;
+  }
+  
+  .question p {
+    font-size: 18px;
+    margin-bottom: 10px;
+  }
+  
+  label {
+    display: block;
+    text-align: left;
+    margin: 5px 0;
+  }
+  
+  input[type="text"] {
+    width: 100%;
+    padding: 8px;
+    margin-top: 5px;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+  }

@@ -1,0 +1,50 @@
+
+  
+  h1 {
+    text-align: center;
+    margin-bottom: 2rem;
+  }
+  
+  .learning {
+    counter-reset: section;
+  }
+  
+ 
+  
+  .section::before {
+    content: "Section " counter(section) ": ";
+    display: block;
+    font-weight: bold;
+    margin-bottom: 0.5rem;
+    color: #483D8B ;
+  }
+  
+
+ 
+  
+
+  .section {
+    counter-increment: section;
+    background: #483D8B;
+    padding: 1rem;
+    margin-bottom: 2rem;
+    border-radius: 8px;
+    box-shadow: 0 4px 8px rgba(96, 47, 202, 0.5);
+    
+    display: flex;
+    align-items: center;
+    gap: 1rem; /* space between image and text */
+  }
+  
+  .section img {
+    max-width: 40%; /* or set a fixed width like 200px */
+    border-radius: 4px;
+    margin-bottom: 0; /* remove bottom margin since it's side by side now */
+  }
+  
+  .section p {
+    margin: 0;
+    color: #fff; /* optional for contrast */
+    flex: 1; /* text takes remaining space */
+  }
+  

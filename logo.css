@@ -1,0 +1,40 @@
+.logo {
+    transition: transform 0.3s ease; /* animation*/
+    }
+
+    .logo:hover {
+    transform: translateY(10px); /* moves image down 10px */
+    }
+
+    .logo_text {
+  display: flex;
+  align-items: center;
+  justify-content:center ; /* instead of left and right stuff*/
+  background: none;
+  /*box-shadow: 0 0 0 4px hsl(248, 37%, 48%);*/
+  width:auto;
+  height: 100vh;
+  padding: 50px;
+  
+    }
+
+.logo {
+    margin-right: 15px; 
+}
+
+.slogan {
+    font-family: Times New Roman;
+    color: #483D8B;
+}
+
+h1 {
+    margin: 0; 
+    font-size: 24px;
+    color: #483D8B;
+}
+
+h2 {
+    margin: 0; 
+    font-size: 16px;
+    color: #483D8B;
+}

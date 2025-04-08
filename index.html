@@ -6,71 +6,167 @@
         <meta charset="UTF-8">
         <meta name="viewport" content="width=device-width, initial-scale=1.0">
 
+
+        <link rel="stylesheet" href="style.css">
+        <link rel="stylesheet" href="sections.css">
+
+        <style>
+        .logo {
+        transition: transform 0.3s ease; 
+        }
+
+        .logo:hover {
+        transform: translateY(10px); /*animation to move it down like click*/
+        }
+
+        .logo_text {
+      display: flex;
+      align-items: center;
+      justify-content:center ; /* instead of left and right stuff*/
+      background: none;
+      /*box-shadow: 0 0 0 4px hsl(248, 37%, 48%);*/
+      width:auto;
+      height: 100vh;
+      padding: 50px;
+      
+        }
+
+    .logo {
+        margin-right: 15px; 
+    }
+
+    .slogan {
+        font-family: Times New Roman;
+        color: #483D8B;
+    }
+
+    h1 {
+        margin: 0; 
+        font-size: 24px;
+        color: #483D8B;
+    }
+
+    h2 {
+        margin: 0; 
+        font-size: 16px;
+        color: #483D8B;
+    }
+
+        </style>
+
     </head>
 
     <body>
+
         <header>
-            <table width="100%">
-                <tr>
-                    <td align="left">
-                        <a href="about.html"><button type="button">About</button></a>
-                        <a href="guide.html"><button type="button">Guide</button></a>
-                        <a href="section_list.html"><button type="button">Sections</button></a>
-                        <a href="index.html"><button type="button">Main</button></a>
-                    </td>
-                    <td align="right">
-                        <button type="button">Search</button>
-                        <button type="button">Dark Theme</button>
-                        <a href="sign_in_main.html"><button type="button">Sign in</button></a>
-                        <a href="section_list.html"><button type="button">quizes</button></a>
-                        
-                    </td>
-                </tr>
-            </table>
-            <img src="konstanta.png">
-            <Span>
-                <h1><b>Konstanta</b></h1>
-                <h2>One Space for All SAT Math points</h2>
-            </Span>
-        </header>
-
-        <main>    
-                <br/>
-                <br/>
-                <table width="100%" height="100%">
+ 
+            <div class="header-bar">
+              
+            
+              <div class="dropdown">
+                <button class="menu-button">
+                  <img src="knino.png" alt="Menu" class="icon" />
+                </button>
+                <div class="content">
+                  <table>
                     <tr>
-                        <td align="center" valign="middle">
-                        <a href="quiz.html"> <button type="button"><centre>Take an Assesment quiz</centre></button> </a>
-                        </td>
+                      <td class="left">
+                        <a href="about.html">About</a>
+                        <a href="guide.html">Guide</a>
+                        <a href="quiz.html">Quiz</a>
+                        <a href="selection_main.html">chapters</a>
+                      </td>
+                      <td class="right">
+                        <a href="about.html">About</a>
+                        <a href="guide.html">Guide</a>
+                        <a href="quiz.html">Quiz</a>
+                        <a href="selection_main.html">chapters</a>
+                      </td>
                     </tr>
-        
-                </table>
+                  </table>
+                </div>
+              </div>
+          
+            
+              <div class="icon-bar">
+                <a href="index.html"><img src="ksaxli.png" alt="Home" class="icon" /></a>
+                <a href="index.html"><img src="darkmode.png" alt="Dark Mode" class="icon" /></a>
+                <a href="sign_in_main.html"><img src="kaci.png" alt="Account" class="icon" /></a>
+              </div>
+              
+            </div>
+          </header>
 
-                <h2><b>Explore</b></h2>
 
-            <table border="1" width="100%" height="900">
-                <tr >
-                    <td align="center" valign="middle" ><a href="section_main.html">Fractions</a> </td>
-                    <td align="center" valign="middle"><a href="section_main.html">Section Name</a> </td>
-                    <td align="center" valign="middle"><a href="section_main.html">Section Name</a> </td>
-        
-                </tr>
-                <tr>
-                    <td align="center" valign="middle" ><a href="section_main.html">Section Name</a> </td>
-                    <td align="center" valign="middle"><a href="section_main.html">Section Name</a> </td>
-                    <td align="center" valign="middle"><a href="section_main.html">Section Name</a> </td>
-                    
-                </tr>
-                <tr>
-                    <td align="center" valign="middle" ><a href="section_main.html">Section Name</a> </td>
-                    <td align="center" valign="middle"><a href="section_main.html">Section Name</a> </td>
-                    <td align="center" valign="middle"><a href="section_main.html">Section Name</a> </td>
-                </tr>
+        <main>  
 
-            </table>
+        <div class="logo_text">    
+        <div class="logo" style="display: flex; justify-content: left; align-items: center; height: 100vh;">
+            <img src="logo.png"  style="border-radius:50%;  width:80; height:80;">
+        </div>
+          
+        <div class="logo"> 
+            <Span >
+                <h1><b>Konstanta</b></h1>
+                <h2 >One Space for All SAT Math points</h2>
+            </Span>
+        </div>
+    </div>
+
+
+
+
+
+
+
+
+
+
+
+            <div style="margin: 0 auto; width: 200px;">
+                <a href="quiz.html"> <button type="button" class="my_btn"><centre>Take an Assesment quiz</centre></button> </a>
+              </div>
+
+
+
+
+
+       
+            
+            
+          
+    
+
+              <div class="grid">
+                <div class="img-wrapper">
+                  <img class="blur" src="https://picsum.photos/500?random=6">
+                  <div class="content fade"><a href="explanations_main.html"> Lorem, ipsum dolor sit amet consectetur adipisicing elit. Esse maiores aspernatur explicabo maxime doloremque rem porro ad in eveniet error!</a></div>
+                </div>
+                <div class="img-wrapper">
+                  <img class="blur" src="https://picsum.photos/500?random=7">
+                  <div class="content fade"><a href="explanations_main.html"> Lorem, ipsum dolor sit amet consectetur adipisicing elit. Esse maiores aspernatur explicabo maxime doloremque rem porro ad in eveniet error!</a></div>
+                </div>
+                <div class="img-wrapper">
+                  <img class="blur" src="https://picsum.photos/500?random=8">
+                  <div class="content fade"><a href="explanations_main.html"> Lorem, ipsum dolor sit amet consectetur adipisicing elit. Esse maiores aspernatur explicabo maxime doloremque rem porro ad in eveniet error!</a></div>
+                </div>
+                <div class="img-wrapper">
+                  <img class="blur" src="https://picsum.photos/500?random=9">
+                  <div class="content fade"><a href="explanations_main.html"> Lorem, ipsum dolor sit amet consectetur adipisicing elit. Esse maiores aspernatur explicabo maxime doloremque rem porro ad in eveniet error!</a></div>
+                </div>
+                <div class="img-wrapper">
+                  <img class="blur" src="https://picsum.photos/500?random=20">
+                  <div class="content fade"><a href="explanations_main.html"> Lorem, ipsum dolor sit amet consectetur adipisicing elit. Esse maiores aspernatur explicabo maxime doloremque rem porro ad in eveniet error!</a></div>
+                </div>
+    
+    
+          
+    
+    </div>
 
 
         </main>    
 
     </body>
+
 </html>
